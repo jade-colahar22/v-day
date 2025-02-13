@@ -1,0 +1,474 @@
+/* Entrance love display */ 
+#love {
+    position: absolute;
+    width: 600px;
+    height: 36px;
+    left: 45%;
+    top: 45%;
+    margin-left: -300px;
+    overflow: visible;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    font-size: large;
+  }
+  
+  #love div {
+    position: absolute;
+    width: 20px;
+    height: 36px;
+    opacity: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    animation: move 2s linear infinite;
+    -o-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -webkit-animation: move 2s linear infinite;
+    transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    color: red;
+  }
+  
+  #love div:nth-child(2) {
+    animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  #love div:nth-child(3) {
+    animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+  
+  #love div:nth-child(4) {
+    animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  #love div:nth-child(5) {
+    animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+  }
+  
+  #love div:nth-child(6) {
+    animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+  
+  #love div:nth-child(7) {
+    animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+  }
+  
+  @keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+  
+    35% {
+      left: 41%;
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    65% {
+      left: 59%;
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    100% {
+      left: 100%;
+      -moz-transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+  
+    35% {
+      left: 41%;
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    65% {
+      left: 59%;
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    100% {
+      left: 100%;
+      -moz-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+  
+    35% {
+      left: 41%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    65% {
+      left: 59%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    100% {
+      left: 100%;
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+  
+    35% {
+      left: 41%;
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    65% {
+      left: 59%;
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  
+    100% {
+      left: 100%;
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  }
+ body{ 
+    background-color: black;
+ }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.next-page {
+    position:fixed;
+    bottom: 20px;
+    right: 20px; 
+    width: 8rem;
+    height: auto;
+   }
+   
+   button.next-page .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.next-page .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #bb1313;
+   }
+   
+   button.next-page .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.next-page .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid red;
+    border-right: 0.125rem solid red;
+    transform: rotate(45deg);
+   }
+   
+   button.next-page .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #d91f1f;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: red;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+   p{
+    color: white;
+   }
+   /* From Uiverse.io by Saad3092003 */ 
+.one-div {
+    position: relative;
+    height: 250px;
+    width: 200px;
+    left: 50px;
+    background-color: pink;
+    transform-style: preserve-3d;
+    animation: rot 2s infinite ease;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0px, inset 0 0 90px 0px;
+    color: rgba(242, 156, 230, 0.894);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .one-div .text {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .one-div:hover.one-div .text {
+    scale: 1.2;
+    opacity: 0.7;
+  }
+  
+  .one-div:hover {
+    box-shadow: 0 0 50px 0px, inset 5px 5px 20px 0px black;
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotateX(-15deg) translateY(0px);
+    }
+  
+    50% {
+      transform: rotateX(-15deg) translateY(-10px);
+    }
+  
+    100% {
+      transform: rotateX(-15deg) translateY(0px);
+    }
+  }
+
+  /* From Uiverse.io by Yaya12085 */ 
+.page {
+    position: relative;
+    left: 26%;
+    box-sizing: border-box;
+    height: 600px;
+    margin-top:  -1200px;
+    max-width: 700px;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #fff;
+    background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+    background-size: 100% 1.2rem;
+    line-height: 1.2rem;
+    padding: 1.29rem 0.5rem 0.3rem 4.5rem;
+  }
+  
+  .page::before,
+  .page::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .page::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+  }
+  
+  .page::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+  }
+  
+  .page:hover::before,
+  .page:hover::after {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  }
+  
+  .margin {
+    position: absolute;
+    border-left: 1px solid #d88;
+    height: 100%;
+    left: 3.3rem;
+    top: 0;
+  }
+  
+  .page p {
+    margin: 0;
+    text-indent: 1rem;
+    padding-bottom: 1.2rem;
+    color: black;
+    line-height: 20px;
+  }
+  #hidden-content img {
+    width: 90%; /* Makes the image fill the width of its container */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 10px; /* O
+    ptional: adds rounded corners to the image */
+  }
+  #chair {
+     
+    bottom: 25px;
+    height: 6%;
+    left: 10%;
+    z-index: 9999;
+    
+    width: 15%;
+  }
+  
+#pic { 
+    position: absolute; /* Absolutely position it */
+    bottom: 30px; /* Lower value to move it up a bit, causing overlap */
+    left: 62px; /* Move it to the right to overlap the second one */
+    animation: rot 2s infinite ease; /* Keep the animation */
+    
+}
+#pic img { 
+    height: 250px;
+}
+
+#chair img { 
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*.one-div video {
+    width: 80%;  /* Adjust the width of the video 
+    height: auto;  /* Maintain aspect ratio 
+    border-radius: 10px;  /* Optional: rounds the corners of the video  */
+
+#try { 
+    bottom: 60px;
+    left: 83%;
+}
+#middle{
+    bottom: 750px;
+    left: 83%;
+}
+#finally { 
+    bottom: 776px;
+    left: 78%;
+}
+#finally img { 
+    height: 100%;
+    width: auto;
+}
+#happy-message {
+    position: absolute;
+    top: -50px; /* Initially position it above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem; /* You can adjust the size as needed */
+    color: rgb(231, 95, 179); /* Changed color to red */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    z-index: 999;
+    animation: slideIn 3s ease-out forwards; /* Apply the animation */
+}
+
+/* Keyframe for sliding in */
+@keyframes slideIn {
+    0% {
+        top: -50px; /* Start position (above the screen) */
+    }
+    100% {
+        top: 20px; /* End position (slightly below the top of the screen) */
+    }
+}
+
+  
